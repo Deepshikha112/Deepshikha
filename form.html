@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="form.css">
+      <meta charset="utf-8">
+      <title>Bug Report | To The New</title>
+   </head>
+   <body>
+      <header>
+         <div id="logo" style="float:left">
+		 <p> <a href="#" >To The New </a>
+		 </p>
+		 </div>
+         <div class="topnav">
+            <p style="float:right">
+               <a class="hover" href="#help">Quick Help</a>
+				<a class="active" href="#home">Home</a>
+            
+            </p>
+         </div>
+      </header>
+      <hr>
+      <br><br><br>
+      <div>
+         <div>
+            <p id="form-heading"><b>Bug Report</b></p>
+         </div>
+         <div>
+            <form class="form">
+               <br>
+               Title*:<br>
+               <input type="text" name="title" class="input" required><br><br>
+               Description*:<br>
+               <textarea rows = "3" cols = "50" name = "description" required></textarea>
+               <br><br>
+               Operating System:<br>
+               <select name="os" >
+                  <option value="windows">Windows</option>
+                  <option value="linux">Linux</option>
+                  <option value="other">Other</option>
+               </select>
+               <br><br>
+               Product*:<br>
+               <select name="product"  required>
+                  <option value="formoid">Formoid</option>
+                  <option value="hawk">Hawk</option>
+               </select>
+               <br><br>
+               Version*:<br>
+               <input type="text" name="version" class="input" required><br><br>
+               License:<br>
+               <input type="radio" name="license">Free
+               <input type="radio" name="license">Business<br><br>
+               Severity:<br>
+               <select name="severity" >
+                  <option value="critical">Critical</option>
+                  <option value="initial">Initial</option>
+               </select>
+               <br><br>
+               Attachments:<br>
+			   <input type="file" name="fileToUpload" id="fileToUpload" class="attach" value="No file selected">
+			   <br><br>
+            </form>
+         </div>
+         <div class="form-footer">
+            <button type="submit" class="button" value="Submit">Submit</button>
+            <br>
+            <br>
+         </div>
+      </div>
+   </body>
+</html>
