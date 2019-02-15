@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>On Click</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("body").on("click","button",function()
+            {
+                $("body").after("<p>Another Paragraph</p>");
+                $("p").attr('class','test');
+            });
+        });
+        $("html").on('click','.test',function () {
+            $("body").after("<p>Another Paragraph</p>");
+            $("p").attr('class','test');
+
+        });
+    </script>
+
+</head>
+<body>
+<button >Click Me</button>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Disable Submit</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#s1").click(function() {
+                $("#s1").attr("disabled", true);
+            });
+        });
+    </script>
+</head>
+<body>
+<input type="submit" id="s1" value="submit"/>
+<input type="button" id="s2" value="click"/>
+
+</body>
+</html>

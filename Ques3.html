@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Colour Change</title>
+    <!--<style>-->
+        <!--[class$="-new"] {-->
+            <!--background: #ffff00;-->
+        <!--}-->
+    <!--</style>-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+    <script>
+
+        $(document).ready(function () {
+            $("p[class$='-new']").css("color", "red");
+            console.log("Dom created");
+        });
+    </script>
+
+</head>
+<body>
+<p  class="click-new">Play</p>
+<p class="open-new">pause</p>
+<p class="click">stop</p>
+</body>
+
+</html>

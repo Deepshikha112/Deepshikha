@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hover</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("option").hover(function()
+            {
+                var a={
+                    val1:"Mansi",
+                    val2:"Deepshikha",
+                    val3:"Charvee",
+                    val4:"Gunjan"
+                };
+                var s=$("#test");
+                $.each(a,function (val,text) {
+                    s.append($("<option></option>").val(val).html(text));
+                });
+
+            });
+
+        });
+    </script>
+</head>
+<body>
+<select id="test">
+    <option>Hover</option>
+</select>
+</body>
+</html>
