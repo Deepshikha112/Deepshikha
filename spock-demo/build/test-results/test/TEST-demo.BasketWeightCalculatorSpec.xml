@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="demo.BasketWeightCalculatorSpec" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-03-06T07:16:33" hostname="ttn" time="0.061">
+  <properties/>
+  <testcase name="one-item" classname="demo.BasketWeightCalculatorSpec" time="0.06"/>
+  <testcase name="two-items" classname="demo.BasketWeightCalculatorSpec" time="0.001"/>
+  <testcase name="order-of-items-does-not-matter" classname="demo.BasketWeightCalculatorSpec" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
