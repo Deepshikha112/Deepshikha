@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--<bean name="database" class="DemoAssignment.Database">-->
+        <!--<property name="portname" value="xyz"/>-->
+        <!--<property name="port" value="100"/>-->
+    <!--</bean>-->
+    <!--&lt;!&ndash;<bean name="tea"  class="DemoAssignment.Tea"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<bean id="expresstea" class="DemoAssignment.ExpressTea"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<bean id="teaRestaurant" class="DemoAssignment.Restaurant">&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="hotDrink" ref="tea"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;</bean>&ndash;&gt;-->
+    <!--&lt;!&ndash;<bean id="expressTeaRestaurant" class="DemoAssignment.Restaurant">&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="hotDrink" >&ndash;&gt;-->
+        <!--&lt;!&ndash;<bean class="DemoAssignment.ExpressTea"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;</property>&ndash;&gt;-->
+    <!--&lt;!&ndash;</bean>&ndash;&gt;-->
+    <!--<bean id="complex" class="DemoAssignment.Complex">-->
+        <!--<property name="list">-->
+        <!--<list>-->
+            <!--<value>1</value>-->
+            <!--<value>2</value>-->
+            <!--<value>3</value>-->
+            <!--<value>4</value>-->
+        <!--</list>-->
+        <!--</property>-->
+        <!--<property name="set">-->
+            <!--<set>-->
+                <!--<value>1</value>-->
+                <!--<value>2</value>-->
+                <!--<value>3</value>-->
+                <!--<value>4</value>-->
+            <!--</set>-->
+        <!--</property>-->
+        <!--<property name="map">-->
+            <!--<map>-->
+                <!--<entry key="key-1" value="value-1"/>-->
+                <!--<entry key="key-2" value="value-2"/>-->
+            <!--</map>-->
+        <!--</property>-->
+    <!--</bean>-->
+    <!--<bean id="teaRestaurant" class="DemoAssignment.Restaurant" autowire="byName"/>-->
+        <!--<bean id="hotDrink" class="DemoAssignment.Tea"/>-->
+
+    <!--<bean id="teaRestaurant" class="DemoAssignment.Restaurant" autowire="byType"/>-->
+    <!--<bean id="hotDrink" class="DemoAssignment.Tea"/>-->
+    <!--<bean-->
+            <!--class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>-->
+
+    <!--<bean id="teaRestaurant" class="DemoAssignment.Restaurant" autowire="constructor" scope="prototype"/>-->
+    <!--<bean id="hotDrink" class="DemoAssignment.Tea"/>-->
+   <!--<bean id="multiple" class="DemoSpringFramework.MultipleEventListener"/>-->
+    <context:annotation-config/>
+
+    <!--<aop:aspectj-autoproxy/>-->
+
+
+
+    <!--<bean id="dummy" class="DemoSpringFramework.Dummy"/>-->
+    <!--<bean id="myAspect" class="DemoSpringFramework.MyAspect"/>-->
+<bean id="tea" class="DemoAssignment.Tea"/>
+    <bean id="restaurant" class="DemoAssignment.Restaurant">
+        <property name="hotDrink" ref="tea"/>
+    </bean>
+</beans>
